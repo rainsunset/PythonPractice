@@ -1,3 +1,4 @@
+#encoding: utf-8
 # 控制台输出函数
 print('hello world')
 # 内容也可以为用逗号隔开的的多个内容 显示结果为空格隔开
