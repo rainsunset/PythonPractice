@@ -46,7 +46,6 @@ threeList = range(3,31,3)
 print(threeList)
 # practice END
 
-
 print('输入整数。。。。')
 a = input()
 if int(a) >= 0:
