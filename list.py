@@ -87,6 +87,7 @@ print(scenery[:4])
 print(scenery[2:])
 print(scenery[-2:])
 
+# 数组的复制
 aaa = ["a1","a2"]
 myaaa = aaa
 print(aaa)
@@ -105,6 +106,17 @@ scenery.append("bulisituo")
 myscenery.append("home")
 print(scenery)
 print(myscenery)
+
+# count 方法 计算元素在数组里出现的次数
+results = [1,2,3,4,5,6,1,2,3,4,2,3,6,4,2,1,3,4,2,2,3,4,]
+print("1在数组里出现了"+ str(results.count(1)) + "次")
+
+# 列表解析
+squares2 = [value ** 2 for value in range(1,11)]
+print(squares2)
+
+numbers = list(range(2,9))
+print(numbers)
 
 group = (12,13,14)
 print(group)

@@ -20,11 +20,6 @@ print (min(squares))
 print (max(squares))
 print (sum(squares))
 
-squares2 = [value ** 2 for value in range(1,11)]
-print(squares2)
-
-numbers = list(range(2,9))
-print(numbers)
 
 # practice
 for x in range(1,21):
