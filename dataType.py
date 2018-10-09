@@ -1,3 +1,4 @@
+# encoding:utf-8
 # 数据类型
 # 整数 范围:任意大小
 #     - 10进制：1 0 -1的·
@@ -26,6 +27,7 @@ print("I'd like number" + str(num) +",and you ?")
 #     - 转义符 \  \n \t \\
 print('Languages:\n\tPython\n\tJava\n\tJavaScript')
 #     - r'' 表示内部字符不转义
+print(r'D:\MyGitCode\PythonPractice')
 #     - '''...'''可表示多行内容 ... 为提示符，不是代码一部分
 print('''line1
 line2
@@ -49,6 +51,22 @@ no_blank_word2 = blank_word.lstrip()
 print('|'+no_blank_word2+'|')
 no_blank_word3 = blank_word.strip()
 print('|'+no_blank_word3+'|')
+# 字符替换
+strs = "cat1cat3cat3"
+print(strs.replace("cat","dog"))
+print(strs)
+# 字符分割
+str1 = ("If by life you were deceived, Don't be dismal,don't be wild! In the "
+        + "day of grief,be mild: Merry days will come,believe. Heart is living "
+        + "in tomorrow; Present is dejected here: In a moment,passes sorrow; "
+        + "That which passes will be dear.")
+worlds = str1.split()
+num_words = len(worlds)
+print("字符串包含单词数" + str(num_words))
+sentence = str1.split(",")
+print(sentence)
+sentence = str1.split(",",2)
+print(sentence)
 # 布尔值
 #     -True
 #     -False

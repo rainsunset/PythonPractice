@@ -1,7 +1,8 @@
 #encoding: utf-8
 # 函数 python 是区分大小写的
 # 规则: 冒号结尾 下一行的缩进视为代码块
-# 约定4个空格为1个缩进  不能用tab
+# 约定4个空格为1个缩进  不能用tab、
+# pass 是占位符 表示现在什么都不做
 
 # for
 dogs = ["lucy","li lei","hua sheng"]
