@@ -8,6 +8,7 @@ while True:
 	rw.fill_walk()
 	point_numbers = list(range(rw.num_points))
 	plt.scatter(rw.x_values, rw.y_values, s=10, c=point_numbers, cmap=plt.cm.BuGn, edgecolors='none')
+	# 着重标记首尾
 	plt.scatter(0, 0, c='Blue', edgecolors='none', s=50)
 	plt.scatter(rw.x_values[-1], rw.y_values[-1], c='Red', edgecolors='none', s=50)
 	# plt.title('随机漫步', fontsize=20)
