@@ -114,6 +114,9 @@ print("1在数组里出现了"+ str(results.count(1)) + "次")
 # 列表解析
 squares2 = [value ** 2 for value in range(1,11)]
 print(squares2)
+sl = ['todo1','todo2','todo9','todo10']
+il = [int(_.lstrip('todo')) for _ in sl]
+print(il)
 
 numbers = list(range(2,9))
 print(numbers)
