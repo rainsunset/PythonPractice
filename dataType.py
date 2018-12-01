@@ -19,6 +19,8 @@ print(0.2+0.1)
 print(0.2-0.1)
 print(3*0.1)
 print(0.3/2)
+
+
 # str()函数
 num = 7
 print("I'd like number" + str(num) +",and you ?")
@@ -102,6 +104,7 @@ print(3 < 2)
 #     -and or not
 print(not(True and False))
 # 空值 None
+# 元组
 # 列表
 # 字典
 # 自定义数据类型

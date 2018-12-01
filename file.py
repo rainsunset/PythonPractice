@@ -64,10 +64,13 @@ pi_string_copy = ''
 for line in lines_copy:
 	pi_string_copy += line.strip()
 print(len(pi_string_copy))
+# with语句可以更容易地清理打开的文件 
 # open 函数默认'r' 只读模式
 # 'w' 时，若文件不存在 python将创建文件 若文件已存在python将先清空文件内容再返回
 # 'r+' 读取和写入文件模式
 # 'a' 附加模式(追加内容)
+# 'b' 附加说明某模式用于二进制文件 比如'rb' 'wb'
+# 'U' 通用换行模式，单独使用或附加到其他读模式， 如'rU'
 # python 只能将字符串写入到文本中，写入数字时要用str()转义
 
 # 写入多行

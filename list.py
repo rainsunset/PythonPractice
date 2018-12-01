@@ -29,7 +29,13 @@ language.insert(3,rea)
 print(language)
 language.remove(rea)
 print(language)
-
+# 数组串联
+list_a = [1,2,3] + [5,7,11]
+print(list_a)
+# 数组追加
+list_x = [1,2,3]
+list_x.extend([7,8,9])
+print(list_x)
 # practice
 guest = ["huang xiao shan","huo ling ling","guo jia hong","liu qing yan","hou meng ying","li yu ru","tang wan"]
 print("guests list : " + str(guest))
@@ -53,6 +59,7 @@ del guest[0]
 print("It's a null list " + str(guest))
 # practice END
 
+# 数组排序
 print("Before sort " + str(language))
 print(language.sort())
 print("After sort " + str(language))
@@ -64,7 +71,6 @@ print("sort patr time  " + str(sorted(language,reverse = True)))
 print(language)
 print(language.reverse())
 print("After reverse" + str(language))
-
 # practice
 scenery = ["yun nan","hua shan","xi zang","tai shan","thailand"]
 print(scenery)
@@ -82,11 +88,17 @@ scenery.sort(reverse = True)
 print(scenery)
 # practice end
 
+#数组切片 包括起始元素，不包括结束元素
 print(scenery[1:3])
 print(scenery[:4])
 print(scenery[2:])
+# 负数表明从后向前
 print(scenery[-2:])
-
+# 第二个买好表示 step，可以隔一个取一个
+print(scenery[::2])
+# 将数组颠倒的办法
+print(scenery[::-1])
+               
 # 数组的复制
 aaa = ["a1","a2"]
 myaaa = aaa
@@ -121,6 +133,7 @@ print(il)
 numbers = list(range(2,9))
 print(numbers)
 
+# 元组
 group = (12,13,14)
 print(group)
 print(group[0])
@@ -132,3 +145,19 @@ for item in group:
 	print(item)
 group = (23,33,43)
 print(group)
+# 数组->元组
+tuple([1,2,3,4])
+tuple('string')
+# 元组拆分
+(a,b) = (12,13)
+print(a)
+print(b)
+(a,b,*rest) = (1,2,3,4,5,6,7)
+print(a)
+print(b)
+print(rest)
+# 元组值替换
+(a,b) = (1,2)
+(b,a) = (a,b)
+print(a)
+print(b)
